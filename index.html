@@ -114,7 +114,7 @@ var myLayer = L.mapbox.featureLayer().addTo(map);
 
 var geoJson = [{
     type: 'Massapequa Preserve Lake',
-    "geometry": { "type": "Point", "coordinates": [43.068887774169625,13.0078125]},
+    "geometry": { "type": "Point", "coordinates": [13.0078125,43.068887774169625]},
     "properties": {
         'title': 'Lake from Merrick road',
         'marker-color': '#ff2600',
@@ -123,80 +123,96 @@ var geoJson = [{
 
         // Store the image url and caption in an array.
         'images': [
-          ['https://i.pinimg.com/originals/c3/1b/37/c31b371dd895a02fe1ca37eb4d235ed9.jpg','You are about to experience an interactive map and <a href="http://molloyenglish.org/omeka-2.4">archive</a> of the Boyne Valley in Northeastern Ireland. The map and <a href="http://molloyenglish.org/omeka-2.4">archive</a> were created in the spring of 2016 by the students of SAP 261 [Media Archaeology] in consultation with <a href="http://mapplega.com">Matt Applegate</a>, <a href="http://www.jamesncohen.com/">Jamie Cohen</a>, <a href="http://margaretdelima.com/home.html">Maraget DeLima</a>, and Destinee Day.'],          ['http://molloymediaarchaeology.org/images/dkitwide.jpg','Students completed this map and archive along with a certificate in <a href="https://www.dkit.ie/news/dkit-unveils-new-programme-certificate-cultural-landscapes-newgrange-boyne-valley">Cultural Landscapes</a> at <a href="https://www.dkit.ie/">DkIT</a>, Dundalk Institute of Technology, led by professor <a href="https://www.dkit.ie/users/dr-conor-brady">Conor Brady</a>.'],
-          ['https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkRnLi0_5YTHKXGqjCzZDdE5cHMifE2sEaEw&usqp=CAU','The colors attributed to each point on the map correspond to student groups and the locations they visited. Be sure to zoom in! Some markers are not immediately visible.'],
-          ['https://cdn-assets.alltrails.com/uploads/photo/image/23600768/large_5ff7bbe548d91df39eea811f2304c828.jpg'<font color = "9900CC">Team Purple</font> (Krystin White, Matt Rooney, Jack Siegel, Shakhan Volmar, Liz Spencer).'],
-          ] 'The Massapequa preserve lake is a beautiful piece of scenery that will fill you with awe. At this point it is being viewed from Merrick road where you are able to see the mini waterfall. There are two benches here and you can sit down and watch the sunset.' 
+          ['https://i.pinimg.com/originals/c3/1b/37/c31b371dd895a02fe1ca37eb4d235ed9.jpg','The Massapequa preserve lake is a beautiful piece of scenery that will fill you with awe. At this point it is being viewed from Merrick road where you are able to see the mini waterfall. There are two benches here and you can sit down and watch the sunset'],
+          ['https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkRnLi0_5YTHKXGqjCzZDdE5cHMifE2sEaEw&usqp=CAU','The lake is a beautiful place to have a picnic.'],
+          ['https://cdn-assets.alltrails.com/uploads/photo/image/23600768/large_5ff7bbe548d91df39eea811f2304c828.jpg','You can fish in this lake as well'],
+          ] 
     }
 }, {
     type: 'Nassau/Suffolk Greenbelt Trail',
-    "geometry": { "type": "Point", "coordinates": [40.66965113109822, -73.47030222415924]},
+    "geometry": { "type": "Point", "coordinates": [-73.47030222415924,40.66965113109822]},
     "properties": {
         'title': 'Trail Break Off',
         'marker-color': '#00f900',
         'marker-symbol': 'triangle',
         'marker-size': 'medium',
         'images': [
-          ['https://drive.google.com/uc?id=1nrASGFFgdD4gFSJYhsanN_eim-chlvyU','The Belfast Peace Lines were constructed in 1969 and divided Catholic communities from Protestant ones.'],
-          ['http://molloymediaarchaeology.org/images/peacewall2.jpg','Molloy students visited the peace lines on May 28, 2016.'],
-          ['http://molloymediaarchaeology.org/images/peacewall3.jpg','Students wrote their names and messages on the walls, leaving a mark on the structure. Writing on the walls is a common and important act of memorialization.']
-        ]
-    }
+          ['https://3.bp.blogspot.com/-sYTmSY4lXok/V07r0B2EKmI/AAAAAAAABUA/JDD-VBRkCgYBQfass6KcVJyPyXktbe__wCLcB/s1600/NassauSuffolkBlog3.jpg','The trail is a great place to take in nature'],
+          ['https://www.nrtdatabase.org/trailPhotos/2319_Nassau_1.jpg','The trail will lead you all the way to bethpage if you decide to follow the whole thing.',] 
+          ['https://3.bp.blogspot.com/-YpXXxUKyNAQ/V07rzr4M7HI/AAAAAAAABTw/S809irXNY-sTikAOpOXLVQXsUtXLzODGwCLcB/s1600/NassauSuffolkBlog10.jpg',' There are parts of the trail that get a little dirty so make sure you wear the aprropriate shoes'],
+          }
 }, {
-    type: 'Feature',
-    "geometry": { "type": "Point", "coordinates": [-6.2603, 53.349805]},
+    type: 'Kiwanis Fishing Bridge',
+    "geometry": { "type": "Point", "coordinates": [-73.46103250980376,40.68112213109241]},
     "properties": {
-        'title': 'Dublin, Ireland',
-        'marker-color': '#FFFFFF',
-        'marker-symbol': 'city',
-        'marker-size': 'large',
-        'images': [
-          ['http://molloymediaarchaeology.org/images/dublintown.jpg','Students spent Sunday, May 29 in Dublin, Ireland.'],
-          ['http://molloymediaarchaeology.org/images/jervis.jpg','<iframe width="280" height="195" src="https://www.youtube.com/embed/O31ciXE9tns" frameborder="0" allowfullscreen></iframe>','Students documented what they saw and experienced.']
-        ]
-    }
-}, {
-      type: 'Feature',
-      "geometry": { "type": "Point", "coordinates": [-71.47241592, 41.38939058]},
-      "properties": {
-        'title': 'Scarborough State Beach',
-        'marker-color': '#2ccac5',
-        'marker-symbol': 'swimming',
+        'title': 'Kiwanis Fishing Bridge',
+        'marker-color': '#d95000',
+        'marker-symbol': 'square',
         'marker-size': 'medium',
         'images': [
-      ['https://assets.simpleviewinc.com/simpleview/image/fetch/c_limit,q_80,w_1200/https://assets.simpleviewinc.com/simpleview/image/upload/crm/southcountyri/Narragansett--Scarborough-Beach-1de6154b5056a36_1de61696-5056-a36a-0b92b977b22cb3f4.jpg','This is Scarborough State Beach in Narragansett, Rhode Island.'],
-      ['https://i.pinimg.com/564x/8d/59/f4/8d59f46f872fe878ccdee5da81fa6bfc.jpg','I love to go here to watch the sunset and clear my head.'],
-      ['https://s3-media0.fl.yelpcdn.com/bphoto/1e65aSmwt4EKndLb1VJsvQ/o.jpg','I go there a lot over the summer and I always take pictures by these rocks.']
+          ['https://www.massapequakiwanis.org/wp-content/uploads/2016/10/10537165_591655237622106_3894132583052772685_n.jpg','This bridge is a tourist spot, you can catch fish and even see some turtles'],
+          ['https://www.massapequapost.com/wp-content/uploads/images/2007-05-09/013p1_xlg.jpg','The bridge is also a place where people from Massapequa come together and celebrate the land that was once there']
+          ['https://i.pinimg.com/originals/49/38/ec/4938ec051280d83dcc7b02b33c3f4f5d.jpg','The wildlife on this bridge is amazing, they are usually attracted here because people feed them',]
+        ]
+    }
+}, {
+      type: 'Massapequa Creek',
+      "geometry": { "type": "Point", "coordinates": [-73.4599220752716,40.68311953917217]},
+      "properties": {
+        'title': 'Massapequa Creek',
+        'marker-color': '#3a88fe',
+        'marker-symbol': 'star',
+        'marker-size': 'medium',
+        'images': [
+      ['https://lh3.googleusercontent.com/proxy/VgfAv3TobUh-dzSlGgnLPnR5imj4kmc50NVM5669iZV92Qs1n8q_5NGU5w2gTUK1PmN0agrWALOvkFBzZruMvN22zAzm1g_ufQvCx27KTP3RXnBuVmiXIpmXSAQp4TnzpZSog7BgkLIgvgTxfCjcyKzvPQ','This hidden gem is one of my favorite spots because it is the most quiet and most serene],
+      ['https://media-cdn.tripadvisor.com/media/photo-s/08/b9/eb/ab/by-the-stream.jpg','I love to dip my feet in the cold water but you need to be careful because it is very slippery'],
+      ['https://media-cdn.tripadvisor.com/media/photo-s/0c/ee/72/8a/lots-of-ducks-at-this.jpg','I went here to watch the sunset and there were so many ducks']
       ]
     }
 }, {
-  type: 'Feature',
-    "geometry": { "type": "Point", "coordinates": [-6.395667, 53.983818]},
+  type: 'Brady Park',
+    "geometry": { "type": "Point", "coordinates": [-73.46115052700043,40.68013764317512]},
     "properties": {
-        'title': 'Molloy Media Archaeology',
-        'marker-color': '#FFFFFF',
+        'title': 'The Best Park in Massapequa',
+        'marker-color': '#fff76b',
         'marker-symbol': 'circle',
-        'marker-size': 'large',
+        'marker-size': 'rocket',
 
         // Store the image url and caption in an array.
         'images': [
-        ['https://assets.simpleviewinc.com/simpleview/image/fetch/c_limit,q_80,w_1200/https://assets.simpleviewinc.com/simpleview/image/upload/crm/southcountyri/Narragansett--Scarborough-Beach-1de6154b5056a36_1de61696-5056-a36a-0b92b977b22cb3f4.jpg','Scarborough State Beach'],
-        ['https://i.pinimg.com/564x/8d/59/f4/8d59f46f872fe878ccdee5da81fa6bfc.jpg','The suneset at Scarborough State Beach'],
-        ['https://s3-media0.fl.yelpcdn.com/bphoto/1e65aSmwt4EKndLb1VJsvQ/o.jpg','The rocks at Scarborough State Beach']
+        ['https://patch.com/img/cdn/users/8823/2010/07/raw/3eb97de3bcb66d00f99449666ffdde43.jpg','Scarborough I like coming to this park because it is such a nice time to bring my baby cousin. We Love to go to the park and then go back into the preserve.'],
+        ['https://images.squarespace-cdn.com/content/v1/574f8c962b8dde8a430f3e4a/1468531873071-GJDREKCEE4E1UTMQR6X6/ke17ZwdGBToddI8pDm48kOouuPCRmzCdud9lOgByk8N7gQa3H78H3Y0txjaiv_0fBvivNZK_6JPv8QJncOi2GYFUAWbBxdR9LKPKTu4CJTRmCbKs1hhYDmfu9Qj4fD3K8eSOYnNd9sCB8xjAo8q6BlCvyAd1-5UQFnp8aARaJsV2Fhtc97iKKQczi46uM05J8oVWQbdqCTau-jWBG7rryw/Photo+Jul+14%2C+3+50+37+PM.jpg','When I watch my baby cousin we always play tag here'],
+        ['https://fastly.4sqi.net/img/general/600x600/13194532_5P2nzlzBxQ5pCGJgqi4_Kuvh0wcoqSi92Go01cnhJE0.jpg','This a great place to stop and eat lunch']
+        ]
+      }
+ }, {
+  type: 'Brady Park',
+    "geometry": { "type": "Point", "coordinates": [-6.395667, 53.983818]},
+    "properties": {
+        'title': 'The Best Park in Massapequa',
+        'marker-color': '#fff76b',
+        'marker-symbol': 'circle',
+        'marker-size': 'rocket',
+
+        // Store the image url and caption in an array.
+        'images': [
+        ['https://patch.com/img/cdn/users/8823/2010/07/raw/3eb97de3bcb66d00f99449666ffdde43.jpg','Scarborough I like coming to this park because it is such a nice time to bring my baby cousin. We Love to go to the park and then go back into the preserve.'],
+        ['https://images.squarespace-cdn.com/content/v1/574f8c962b8dde8a430f3e4a/1468531873071-GJDREKCEE4E1UTMQR6X6/ke17ZwdGBToddI8pDm48kOouuPCRmzCdud9lOgByk8N7gQa3H78H3Y0txjaiv_0fBvivNZK_6JPv8QJncOi2GYFUAWbBxdR9LKPKTu4CJTRmCbKs1hhYDmfu9Qj4fD3K8eSOYnNd9sCB8xjAo8q6BlCvyAd1-5UQFnp8aARaJsV2Fhtc97iKKQczi46uM05J8oVWQbdqCTau-jWBG7rryw/Photo+Jul+14%2C+3+50+37+PM.jpg','When I watch my baby cousin we always play tag here'],
+        ['https://fastly.4sqi.net/img/general/600x600/13194532_5P2nzlzBxQ5pCGJgqi4_Kuvh0wcoqSi92Go01cnhJE0.jpg','This a great place to stop and eat lunch']
         ]
       }
 }, {
-    type: 'Feature',
-    "geometry": { "type": "Point", "coordinates": [-6.42425, 53.72220]},
+    type: 'Bethpage Bikeway Trail',
+    "geometry": { "type": "Point", "coordinates": [-73.46115052700043,40.68013764317512]},
     "properties": {
-        'title': 'The Memory Sculpture',
-        'marker-color': '#FFD700',
-        'marker-symbol': 'monument',
+        'title': 'Grab Your Bike',
+        'marker-color': '#ffaa00',
+        'marker-symbol': 'marker-stroked',
         'marker-size': 'medium',
         'images': [
-          ['http://molloymediaarchaeology.org/images/adriana_memory2.jpg','The Memory Sculpture is another piece kept within the Walled Gardens.'],
-          ['http://molloymediaarchaeology.org/images/grant_pole2.jpg','The sculpture is a remnant of another tree present at the Battle of the Boyne.'],
-          ['http://molloymediaarchaeology.org/images/grant_pole4.jpg','The wooden monument is intended to serve as a reminder to visitors that history never goes away -- it is forever present and forever a part of the people it touches.']
+          ['https://cloudfront.traillink.com/photos/bethpage-bikeway_161214_sc.jpg','This trail is strictly for riding bikes so be careful and stay clear of bikers if you choose to walk'],
+          ['https://mommyp-prod.s3.amazonaws.com/styles/image620x420/s3/li_bike_trails.jpg?itok=MtLKwXZ1','Bikers get to ride together and enjoy the view of the water.'],
+          ['https://static.mommypoppins.com/styles/image620x420/s3/bethpage_edit_1.jpg?itok=AFO-vDXi','My cousin and I take this bike trail after Brady Park into Bethpage']
         ]
     }
 }];
